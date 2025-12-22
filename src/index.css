@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Custom Properties */
+:root {
+  --primary: #2beeee;
+  --background-dark: #111818;
+  --secondary-dark: #1c2727;
+  --border-dark: #283939;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5ff5f5;
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #9ca3af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* QA Swag Animations */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.glitch:hover {
+  animation: glitch 0.3s infinite;
+}
+
+/* Pulse Glow Animation */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(43, 238, 238, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(43, 238, 238, 0.6); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Scan Line Animation */
+@keyframes scan {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+.scan-line {
+  animation: scan 3s ease-in-out infinite;
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--primary);
+  color: var(--background-dark);
+}
+
+/* Custom Theme Colors for Tailwind */
+@theme {
+  --color-primary: #2beeee;
+  --color-background-dark: #111818;
+  --color-secondary-dark: #1c2727;
+  --color-border-dark: #283939;
+  
+  --font-family-display: 'Space Grotesk', sans-serif;
+  --font-family-body: 'Noto Sans', sans-serif;
+}
