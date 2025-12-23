@@ -80,9 +80,9 @@ const Contact: React.FC = () => {
               
               <div className="space-y-4 pt-4">
                 {[
-                  { icon: 'mail', value: 'hamad.raza@example.com', label: 'Email Me', color: 'primary' },
-                  { icon: 'call', value: '+1 (555) 123-4567', label: 'Call Me', color: 'green-400' },
-                  { icon: 'location_on', value: 'New York, NY (Open to Remote)', label: 'Location', color: 'blue-400' }
+                  { icon: 'mail', value: 'hamadmughal512@gmail.com', label: 'Email Me', color: 'primary' },
+                  { icon: 'call', value: '+923123732442', label: 'Call Me', color: 'green-400' },
+                  { icon: 'location_on', value: '71000 Hyderabad Pakistan (Open to Remote)', label: 'Location', color: 'blue-400' }
                 ].map((item, i) => (
                   <div key={i} className="contact-item flex items-center gap-5 group p-4 rounded-2xl border border-transparent hover:border-border-dark hover:bg-secondary-dark/50 transition-all cursor-pointer">
                     <div className={`contact-icon flex h-14 w-14 items-center justify-center rounded-2xl bg-${item.color}/10 border border-${item.color}/30 text-${item.color}`}>
