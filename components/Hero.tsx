@@ -139,7 +139,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative overflow-hidden py-5 md:py-32 lg:py-20 min-h-screen flex items-center">
+    <section ref={containerRef} className="relative overflow-hidden py-6 md:py-32 lg:py-20 min-h-screen flex items-center">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(43,238,238,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(43,238,238,0.03)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black_40%,transparent_100%)]"></div>
