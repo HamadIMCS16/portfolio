@@ -213,7 +213,7 @@ const Hero: React.FC = () => {
               
               <h2 className="hero-reveal max-w-[600px] text-gray-300 md:text-xl font-body leading-relaxed">
                 I'm <span className="text-primary font-black bg-primary/10 px-2 py-1 rounded">Hamad Raza</span>, 
-                a Software Quality Insurance Engineer who turns chaos into <span className="line-through text-gray-500">bugs</span> <span className="text-green-400 font-bold">clean code</span>. 
+                a Software Quality Assurance Engineer who turns chaos into <span className="line-through text-gray-500">bugs</span> <span className="text-green-400 font-bold">clean code</span>. 
                 Specialized in AI-driven test automation & zero-defect releases.
               </h2>
               
