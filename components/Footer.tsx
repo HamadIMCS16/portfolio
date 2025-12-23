@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <span className="text-xl font-bold font-display">Hamad Raza</span>
           </div>
           <p className="text-sm text-gray-500 font-body">
-            © 2024 Hamad Raza. Built with precision for digital excellence.
+            © {new Date().getFullYear()} Hamad Raza. Built with precision for digital excellence.
           </p>
         </div>
         
