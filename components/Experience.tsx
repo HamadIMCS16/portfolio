@@ -11,7 +11,7 @@ const Experience: React.FC = () => {
   
   const experiences = [
     {
-      role: 'QA Engineer',
+      role: 'SQA Engineer',
       company: 'Zetsol Technologies',
       period: 'Jan 2025 - Present',
       desc: 'Led the automation initiative, reducing regression testing time by 40% using Selenium and Python. Managed full bug lifecycles in Jira across multiple production cycles.',
