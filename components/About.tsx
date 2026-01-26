@@ -9,9 +9,9 @@ const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   
   const stats = [
-    { label: 'Years Experience', value: '1.5+', icon: 'schedule' },
+    { label: 'Year Experience', value: '1', icon: 'schedule' },
     { label: 'Projects Tested', value: '20+', icon: 'folder_open' },
-    { label: 'Computer Science', value: 'MS', icon: 'school' },
+    { label: 'Computer Science', value: 'MSC', icon: 'school' },
     { label: 'Bug Detection', value: '99%', icon: 'bug_report' },
   ];
 

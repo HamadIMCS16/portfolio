@@ -219,7 +219,7 @@ const Hero: React.FC = () => {
               
               <div className="hero-reveal flex flex-wrap items-center gap-3 text-sm font-mono">
                 <span className="bg-gradient-to-r from-primary/20 to-transparent border border-primary/30 px-4 py-2 rounded-full text-primary font-bold flex items-center gap-2">
-                  <span className="material-symbols-outlined text-sm">school</span> MS-CS
+                  <span className="material-symbols-outlined text-sm">school</span> MSC-CS
                 </span>
                 <span className="bg-gradient-to-r from-green-500/20 to-transparent border border-green-500/30 px-4 py-2 rounded-full text-green-400 font-bold flex items-center gap-2">
                   <span className="material-symbols-outlined text-sm">verified</span> 1 Year
