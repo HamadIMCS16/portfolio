@@ -23,13 +23,13 @@ const App: React.FC = () => {
     const cursorDot = cursorDotRef.current;
     
     const moveCursor = (e: MouseEvent) => {
-      gsap.quickSetter(cursor, {
+      gsap.to(cursor, {
         x: e.clientX,
         y: e.clientY,
         duration: 0.5,
         ease: 'power3.out'
       });
-      gsap.quickSetter(cursorDot, {
+      gsap.to(cursorDot, {
         x: e.clientX,
         y: e.clientY,
         duration: 0.1
@@ -38,10 +38,10 @@ const App: React.FC = () => {
 
     // Cursor hover effects
     const handleMouseEnter = () => {
-      gsap.quickSetter(cursor, { scale: 2.5, opacity: 0.5, duration: 0.3 });
+      gsap.to(cursor, { scale: 2.5, opacity: 0.5, duration: 0.3 });
     };
     const handleMouseLeave = () => {
-      gsap.quickSetter(cursor, { scale: 1, opacity: 1, duration: 0.3 });
+      gsap.to(cursor, { scale: 1, opacity: 1, duration: 0.3 });
     };
 
     window.addEventListener('mousemove', moveCursor);
